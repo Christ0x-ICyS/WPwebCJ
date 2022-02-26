@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/quartz/bootstrap.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/emojibuff.appspot.com/i/tw/1f3ae.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card text-white bg-primary">
+              <div class="card-body">
+                <h1 id="title" class="card-title text-center">Videojuegos</h1>
+                <p id="description" class="card-text">
+                  Por favor, responde esta encuesta sobre su relación con los
+                  videojuegos.
+                </p>
+                <form id="survey-form" action="#">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="nombre"
+                      required
+                    />
+                    <label id="name-label" for="name">Nombre</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="email@gmail.com"
+                      required
+                    />
+                    <label id="email-label" for="email">Correo</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="number"
+                      placeholder="18-99"
+                      min="18"
+                      max="99"
+                    />
+                    <label id="number-label" for="number">Edad</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <select
+                      class="form-select"
+                      id="dropdown"
+                      aria-label="Ocupacion"
+                    >
+                      <option value="estudiante">Estudiante</option>
+                      <option value="empleado">Empleado</option>
+                      <option value="desempleado">Desempleado</option>
+                    </select>
+                    <label for="dropdown">Ocupación</label>
+                  </div>
+                  <p>Sexo</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sexo"
+                      id="femenino"
+                      value="femenino"
+                    />
+                    <label class="form-check-label" for="femenino">
+                      Femenino
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="sexo"
+                      id="masculino"
+                      value="masculino"
+                    />
+                    <label class="form-check-label" for="masculino">
+                      Masculino
+                    </label>
+                  </div>
+                  <p>Plataforma</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="pc"
+                      id="pc"
+                    />
+                    <label class="form-check-label" for="pc"> PC </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="consola"
+                      id="consola"
+                    />
+                    <label class="form-check-label" for="consola">
+                      Consola
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="mobile"
+                      id="mobile"
+                    />
+                    <label class="form-check-label" for="mobile">
+                      Mobile
+                    </label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea
+                      class="form-control"
+                      placeholder="Cuéntanos tu experiencia"
+                      id="textarea"
+                    ></textarea>
+                    <label for="textarea">Mi experiencia</label>
+                  </div>
+                  <div class="d-grid">
+                    <input
+                      class="btn btn-success"
+                      id="submit"
+                      type="submit"
+                      value="Enviar"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>
