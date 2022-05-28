@@ -1,4 +1,4 @@
-const url = "http://localhost:4000/empleados";
+const url = "https://nomina-api-cj.herokuapp.com/empleados";
 fetch(url)
   .then((response) => response.json())
   .then((data) => getData(data))
